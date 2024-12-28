@@ -1,4 +1,6 @@
+"use client";
 import SimpleDialogDemo from "./components/dialog/SimpleDialogDemo";
+import LocationInput from "./components/LocationInput/LocationInput";
 import RangeComponent from "./components/RangeComponent/RangeComponent";
 import styles from "./page.module.css";
 
@@ -13,6 +15,11 @@ export default async function Home() {
 
       <SimpleDialogDemo />
       <RangeComponent currentMin={100} currentMax={1000} isOpenSlider={true} />
+      <LocationInput
+        placeHolder="Enter First Point"
+        value="value"
+        onChange={() => console.log("change value")}
+      />
     </div>
   );
 }

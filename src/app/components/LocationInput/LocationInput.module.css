@@ -4,6 +4,8 @@
   border: 2px solid #919b9b;
   padding: 1rem;
   gap: 8px;
+  width: 50%;
+  align-items: center;
 }
 
 .input {
@@ -12,6 +14,7 @@
   background-color: white;
   color: black;
   font-size: x-large;
+  flex: 1;
 }
 
 .input::placeholder {
@@ -19,7 +22,17 @@
 }
 
 .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
   font-weight: 700;
-  color: black;
-  font-size: x-large;
+  color: blue;
+  background-color: aqua;
+  border-radius: 20px;
+}
+
+.tail {
+  font-size: xx-large;
 }
